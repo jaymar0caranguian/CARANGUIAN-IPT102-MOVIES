@@ -1,18 +1,21 @@
 ﻿@model BSIT3L_Movies.Models.MovieViewModel
 
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Movie</title>
+    <link rel="stylesheet" href="~/css/getmovie.css" />
 </head>
 <body>
-    <h2>Movie Details</h2>
-    <p>Movie ID: @Model.Id</p>
-    <p>Movie Name: @Model.Name</p>
-    <p>IMDb Rating: @Model.IMDbRating</p>
-    <p>Popularity: @Model.Popularity</p>
-    <p>Release Year: @Model.ReleaseYear</p>
-    <p>Genre: @Model.Genre</p>
+    <img src="~/@Model.ImagePath" alt="@Model.Name" style="max-width: 300px; max-height: 300px; border-radius: 10px; margin-bottom: 10px;" />
+        <h2>Movie Details</h2>
+        @* <p>Movie ID: @Model.Id</p> *@
+    <h3>@* Movie Name: *@ @Model.Name</h3>
+        <p>IMDb Rating: @Model.IMDbRating</p>
+        <p>Popularity: @Model.Popularity</p>
+        <p>Release Year: @Model.ReleaseYear</p>
+        <p>Genre: @Model.Genre</p>
+
+        <a href="@Url.Action("Index", "Home")"><button>Go back</button></a>
 </body>
 </html>
