@@ -27,9 +27,6 @@
     <None Include="wwwroot\Images\mortalengine.jpg" />
     <None Include="wwwroot\Images\paradox.jpg" />
     <None Include="wwwroot\Images\readyplayer.jpg" />
-    <None Include="wwwroot\Images\shanghai.jpg" />
     <None Include="wwwroot\Images\spacesweepers.jpg" />
-    <None Include="wwwroot\Images\valerian.jpg" />
-    <None Include="wwwroot\Images\wandering.jpg" />
   </ItemGroup>
 </Project>
