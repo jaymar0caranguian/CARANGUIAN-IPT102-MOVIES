@@ -26,9 +26,9 @@ public class HomeController : Controller
         new MovieViewModel { Id = 9, Name = "Mortal Engine", ImagePath = "Images/mortalengine.jpg", IMDbRating = "6.1", Popularity = "2,578", ReleaseYear = 2018, Genre = "Action, Adventure, Fantasy, Sci-Fi, Thriller" },
         new MovieViewModel { Id = 10, Name = "Interstellar", ImagePath = "Images/interstellar.jpg", IMDbRating = "8.7", Popularity = "87", ReleaseYear = 2014, Genre = "Adventure, Drama, Sci-Fi" },
         new MovieViewModel { Id = 11, Name = "Ready Player One", ImagePath = "Images/readyplayer.jpg", IMDbRating = "7.4", Popularity = "652", ReleaseYear = 2018, Genre = "Action, Adventure, Sci-Fi" },
-        new MovieViewModel { Id = 12, Name = "The Wandering Earth", ImagePath = "Images/wandering.jpg", IMDbRating = "5.9", Popularity = "3,895", ReleaseYear = 2019, Genre = "Action, Adventure, Sci-Fi, Thriller" },
+        new MovieViewModel { Id = 12, Name = "The Wandering Earth", ImagePath = "Images/wander.jpeg", IMDbRating = "5.9", Popularity = "3,895", ReleaseYear = 2019, Genre = "Action, Adventure, Sci-Fi, Thriller" },
         new MovieViewModel { Id = 13, Name = "Space Sweepers", ImagePath = "Images/spacesweepers.jpg", IMDbRating = "6.5", Popularity = "", ReleaseYear = 2021, Genre = "Action, Adventure, Drama, Fantasy, Sci-Fi" },
-        new MovieViewModel { Id = 14, Name = "Shanghai Fortress", ImagePath = "Images/shanghai.jpg", IMDbRating = "4.4", Popularity = "", ReleaseYear = 2019, Genre = "Action, Sci-Fi" },
+        new MovieViewModel { Id = 14, Name = "Shanghai Fortress", ImagePath = "Images/fortress.jpg", IMDbRating = "4.4", Popularity = "", ReleaseYear = 2019, Genre = "Action, Sci-Fi" },
         new MovieViewModel { Id = 15, Name = "The Cloverfield Paradox", ImagePath = "Images/paradox.jpg", IMDbRating = "5.5", Popularity = "2,057", ReleaseYear = 2018, Genre = "Action, Adventure, Horror" },
         new MovieViewModel { Id = 16, Name = "Dune", ImagePath = "Images/dune.jpg", IMDbRating = "8.0", Popularity = "70", ReleaseYear = 2021, Genre = "Action, Adventure, Drama, Sci-Fi" }
         };
