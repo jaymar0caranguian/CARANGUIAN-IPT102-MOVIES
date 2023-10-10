@@ -10,7 +10,8 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Rating</th>
+            <th>IMDb Rating</th>
+            <th>Popularity</th>
             <th>Release Year</th>
             <th>Genre</th>
         </tr>
@@ -21,7 +22,8 @@
             <tr>
                 <td>@movie.Id</td>
                 <td ><a href = "/movies/getmovie/@movie.Id" > @movie.Name </a></td>
-                <td>@movie.Rating</td>
+                <td>@movie.IMDbRating</td>
+                <td>@movie.Popularity</td>
                 <td>@movie.ReleaseYear</td>
                 <td>@movie.Genre</td>
             </tr>
