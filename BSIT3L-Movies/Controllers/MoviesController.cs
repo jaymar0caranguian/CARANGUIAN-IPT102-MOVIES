@@ -11,7 +11,7 @@ namespace BSIT3L_Movies.Controllers
 		{
             _movies = new List<MovieViewModel>
             {
-            new MovieViewModel { Id = 1, Name = "Valerian and the City Planets of a Thousand Planets", ImagePath = "Images/valerian.jpg", IMDbRating = "6.4", Popularity = "971", ReleaseYear = 2017, Genre = "Action, Adventure, Fantasy, Sci-Fi" },
+        new MovieViewModel { Id = 1, Name = "Valerian and the City Planets of a Thousand Planets", ImagePath = "Images/planets.jpg", IMDbRating = "6.4", Popularity = "971", ReleaseYear = 2017, Genre = "Action, Adventure, Fantasy, Sci-Fi" },
         new MovieViewModel { Id = 2, Name = "I am Mother", ImagePath = "Images/iammother.jpg", IMDbRating = "6.7", Popularity = "4,667", ReleaseYear = 2019, Genre = "Drama, Mystery, Sci-Fi, Thriller" },
         new MovieViewModel { Id = 3, Name = "Train to Busan", ImagePath = "Images/busan.jpg", IMDbRating = "7.6", Popularity = "679", ReleaseYear = 2016, Genre = "Action, Horror,Thriller" },
         new MovieViewModel { Id = 4, Name = "The Midnight Sky", ImagePath = "Images/midnightsky.jpg", IMDbRating = "6.7", Popularity = "4,114", ReleaseYear = 2020, Genre = "Action, Drama, Sci-Fi, Thriller" },
@@ -31,7 +31,7 @@ namespace BSIT3L_Movies.Controllers
         }
         public ActionResult Random()
         {
-            var movie = new MovieViewModel() { Name = "Avatar", IMDbRating = "5", Popularity = "15" };
+            var movie = new MovieViewModel() { Name = "Dune", IMDbRating = "8.0", Popularity = "70" };
             return View(movie);
         }
         public ActionResult GetMovie(int id)
