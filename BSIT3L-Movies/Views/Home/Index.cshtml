@@ -5,43 +5,43 @@
 }
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/index.css" />
 </head>
 <body>
 
-    <table>
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Image</th>
-                <th>IMDb Rating</th>
-                <th>Popularity</th>
-                <th>Release Year</th>
-                <th>Genre</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var movie in Model)
-            {
-                <tr>
-                    <td>@movie.Id</td>
-                    <td><a href="/movies/getmovie/@movie.Id"> @movie.Name </a></td>
-                    <td><img src="~/@movie.ImagePath" alt="@movie.Name" style="max-width: 100px; max-height: 150px;" /></td>
-                    <td>@movie.IMDbRating</td>
-                    <td>@movie.Popularity</td>
-                    <td>@movie.ReleaseYear</td>
-                    <td>@movie.Genre</td>
-                </tr>
-            }
-        </tbody>
-    </table>
+    <div class="main-movie">
+        @if (Model.Any())
+        {
+            var mainMovie = Model.First();
+            <div>
+                <h2><a href="/movies/getmovie/@mainMovie.Id">@mainMovie.Name</a></h2>
+                <a href="/movies/getmovie/@mainMovie.Id">
+                    <img src="~/@mainMovie.ImagePath" alt="@mainMovie.Name" />
+                </a>
+                <p>@mainMovie.Genre</p>
+            </div>
+        }
+    </div>
+
+    <div class="small-movies">
+        @foreach (var movie in Model.Skip(1))
+        {
+            <div class="small-movie">
+                <div>
+                    <h3><a href="/movies/getmovie/@movie.Id">@movie.Name</a></h3>
+                </div>
+                <a href="/movies/getmovie/@movie.Id">
+                    <img src="~/@movie.ImagePath" alt="@movie.Name" />
+                </a>
+                <p>@movie.Genre</p>
+            </div>
+        }
+    </div>
 
 </body>
 </html>
-
-
-

@@ -24,16 +24,16 @@ body {
 }
 
 h2 {
-    color: #e50914; 
+    color: #0d6efd;
 }
 
 p {
     margin: 8px 0;
 }
 
-p:hover {
-    color: #e50914; 
-}
+    p:hover {
+        color: #0d6efd;
+    }
 
 
 
