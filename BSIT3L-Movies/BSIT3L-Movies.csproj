@@ -15,4 +15,21 @@
   <ItemGroup>
     <Folder Include="Views\Movies\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\Images\2012.jpg" />
+    <None Include="wwwroot\Images\busan.jpg" />
+    <None Include="wwwroot\Images\core.jpg" />
+    <None Include="wwwroot\Images\fifthwave.jpg" />
+    <None Include="wwwroot\Images\iammother.jpg" />
+    <None Include="wwwroot\Images\interstellar.jpg" />
+    <None Include="wwwroot\Images\martian.png" />
+    <None Include="wwwroot\Images\midnightsky.jpg" />
+    <None Include="wwwroot\Images\mortalengine.jpg" />
+    <None Include="wwwroot\Images\paradox.jpg" />
+    <None Include="wwwroot\Images\readyplayer.jpg" />
+    <None Include="wwwroot\Images\shanghai.jpg" />
+    <None Include="wwwroot\Images\spacesweepers.jpg" />
+    <None Include="wwwroot\Images\valerian.jpg" />
+    <None Include="wwwroot\Images\wandering.jpg" />
+  </ItemGroup>
 </Project>
